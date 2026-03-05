@@ -17,9 +17,9 @@ function TopicPage() {
   }, [topicid]);
 
   return (
-    <div>
-      <h1 className="text-blue-600">{topic.title}</h1>
-      <p>{topic.content}</p>
+    <div className="m-5 pl-15 pr-10 text-left">
+      <h1 className="text-blue-600 font-bold text-2xl pt-10 pb-5">{topic?.title}</h1>
+      <p>{topic?.content}</p>
     </div>
   );
 }

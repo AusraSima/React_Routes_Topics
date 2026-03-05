@@ -11,8 +11,8 @@ function App() {
   const [topics, setTopics] = useState([]);
 
   const fetchTopics = async () => {
-    const topicsList = await getAlldata();   
-    setTopics(topicsList.topics);
+    const topicsList = await getAlldata();      
+    setTopics(topicsList);
   };
 
   useEffect(() => {
@@ -21,6 +21,8 @@ function App() {
     };
     getData();
   }, []);
+
+  
 
   return (
     <>
